@@ -25,10 +25,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             KotlinFlowJetpackComposeTheme {
                 val viewModel = viewModel<MainViewModel>()
-                val timer = viewModel.countDownFlow.collectAsState(initial = 10)
+//                val timer = viewModel.countDownFlow.collectAsState(initial = 10)
                 Box(modifier = Modifier.fillMaxSize()) {
                     Text(
-                        text = "${timer.value}",
+                        text = "" /*"${timer.value}"*/,
                         fontSize = 18.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color.Black,
